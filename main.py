@@ -62,6 +62,6 @@ def bertExecution(fixedArguments,trainableParams):
 fixedParams = json.load(open("evoAlgParam.json"))["fitnessFunctionFixedArguments"]
 
 #Setting the learning rates and batch size
-treinableParamsList = [3, 2.6, 2.2, 1.8, 1.4, 1.0, 32] #The last element represent the batch size, the others represent the learning rate.
+trainableParams = [3, 2.6, 2.2, 1.8, 1.4, 1.0, 32] #The last element represent the batch size, the others represent the learning rate.
 
 fitnessResultCur = bertExecution(fixedParams,trainableParams)

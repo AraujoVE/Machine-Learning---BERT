@@ -22,6 +22,7 @@ class BertData_Initial:
     extraVocabPath : str = ""
     preTrainedModelPath : str = ""
     outputDataPath : str = ""
+    transformerType : str = ""
 
 @dataclass
 class BertData_Hyperparameters:

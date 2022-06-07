@@ -37,7 +37,7 @@ class BertModel():
 
     def __init__(self,bertData : BertData_Initial):
         self.bertDataInitial = bertData
-        self.setFixedDataBert() if self.bertDataInitial['transformerType'] == "BERT" else self.setFixedDataRoberta() #Generate tokenize, model and device. Different deppending from the transformer model chosen
+        self.setFixedDataBert() if self.bertDataInitial.transformerType == "BERT" else self.setFixedDataRoberta() #Generate tokenize, model and device. Different deppending from the transformer model chosen
         self.incrementVocab() #Increase vocabulary
         self.tokenizeSentences() #Tokenize the sentences
 
